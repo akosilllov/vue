@@ -13,9 +13,6 @@
     "format": "prettier . --write",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "**/*": "npm run dev"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint-staged"

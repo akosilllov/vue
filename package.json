@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "test": "prettier . --write",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -13,15 +14,11 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "linters": {
-      "**/*": [
-        "lint"
-      ]
-    }
+    "**/*": "prettier . --write"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "dependencies": {

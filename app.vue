@@ -9,7 +9,7 @@
 <script>
 import { defineComponent } from "@vue/composition-api";
 
-export default defineComponent({
-  data() {},
-});
+// export default defineComponent({
+//   data() {},
+// });
 </script>
